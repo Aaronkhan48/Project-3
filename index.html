@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href = "p3.css">
+</head>
+<body>
+    <h1>GUESS MY NUMBER</h1>
+    <h2>Guess the number between 1 and 100</h2>
+
+    <div class = "container">
+        <div class = "tl">
+            <p class="l-score">Score:<span class="score"> 10</span></p>
+            <p class="l-highscore">Highscore:<span class="highscore"> 0</span></p>
+        </div>
+        <button id = "myBtn" class = "butt">Reset</button>
+
+        <div class = "cont">
+            <img class = "a" src = "images/question.png">
+            <input class="uInput" type="text" placeholder="Guess a number">
+            <p class='msg'>Guess a number.</p>
+            <button class='check'>Check</button>
+
+            
+        </div>
+
+        <div class = "win"> 
+            <img class = "a" src = "images/youwin.png">
+            <h3>Congratulation</h3>
+            <p class='msg2'>Your guess was correct. <span class ="num"> </span> is my secret number.</p>
+
+
+            <div class = "tl2">
+                <p class="l-score"><b> Your Score:<span class="score2"> 10</span> </b></p>
+                <p class="l-highscore"><b>Best:<span class="highscore2"> 0</span> </b> </p>
+            </div>
+
+            <button id = "rep" class='check2'>Play Again</button>
+        </div>
+
+        <div class = "lose"> 
+            <img class = "a" src = "images/go.png">
+            <h3 class = "pierre">Unfortunately You Lost the Game</h3>
+            <p class='msg3'>My number was: <span class ="num2"> </span></p>
+
+
+            <div class = "tl3">
+                <p>Don't give up. Try Again. You can win next time!</p>
+            </div>
+
+            <button id = "rep" class='check3'>Try Again</button>
+        </div>
+
+
+
+        <div class = "guess">
+            <p class ="help"><b>Guess History</b></p>
+            <ul>
+                <span class = "store"><li></li></span>
+            </ul>
+        </div>
+    </div>
+
+    <script src = "p3.js"></script>
+</body>
+</html>
